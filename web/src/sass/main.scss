@@ -1,0 +1,22 @@
+@import "theme/theme.scss";
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main-container {
+  @include media-breakpoint-up(lg) {
+    padding: 100px 15px 0;
+
+  }
+  padding: 60px 15px 0;
+}
+
+// hack to fix date field height in safari
+// https://8yd.no/article/date-input-height-in-safari
+input::-webkit-datetime-edit {
+  line-height: 1;
+  padding: 0;
+  margin-bottom: -2px;
+}

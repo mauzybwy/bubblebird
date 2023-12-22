@@ -1,0 +1,4 @@
+serviceWorker.ts
+reportWebVitals.ts
+/src/__mocks__/*
+*.test.*
